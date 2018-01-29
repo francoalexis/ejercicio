@@ -1,14 +1,220 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Ejemplo</title>
-  </head>
-  <body>
-    <div class="app">
-      <h1> Ejemplo </h1>
-      <h1> Ejemplo </h1>
-      <h1> Ejemplo </h1><var><h1> Ejemplo </h1>
-      <h1> Ejemplo </h1>var<h1> Ejemplo </h1><h1> Ejemplo </h1><h1> Ejemplo </h1><h1> Ejemplo </h1></var>
-    </div>
-  </body>
-</html>
+<head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+            -->
+            <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+            <meta name="format-detection" content="telephone=no">
+            <meta name="msapplication-tap-highlight" content="no">
+            <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+            <!--<link rel="stylesheet" type="text/css" href="css/index.css"> -->
+            <title>Hello World</title>
+            <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="bootstrap-4.0.0-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+            <script src="js/jquery.min.js"></script>
+            <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+            <script src="js/funciones.js"></script>
+           <!-- <style type="text/css">
+                body{
+                    font-size: 9px;
+                }
+            </style>-->
+
+        </head>
+        <body>
+        <nav class="navbar ">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                      <img src="img/logocampeonato.png" width="81" height="30" alt="">
+                    </a>
+                    <a class="navbar-brand" href="#">CARTILLA CLUE</a>
+                </div>
+
+              </div>
+        </nav>
+        <div class="app">
+            <div class="container" >
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col" colspan="4"><center>SOSPECHOSOS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Coronel Mostaza</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS"></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS2"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Profesor Moradillo</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS"></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS2"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sr. Verdi</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS"></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS2"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sra. Azulina</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS"></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS2"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Srita. Escarlata</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS"></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS2"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sra. Blanco</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS"></th>
+                    <th scope="row"><input type="radio" name="SOSPECHOSOS2"></th>
+                  </tr>
+                </tbody>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col" colspan="4"><center>ARMAS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Cuchillo</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="armas2"></th>
+                    <th scope="row"><input type="radio" name="armas"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Canldeladro</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="armas2"></th>
+                    <th scope="row"><input type="radio" name="armas"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Pistola</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="armas2"></th>
+                    <th scope="row"><input type="radio" name="armas"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Veneno</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="armas2"></th>
+                    <th scope="row"><input type="radio" name="armas"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cuerda</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="armas2"></th>
+                    <th scope="row"><input type="radio" name="armas"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Pesas</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="armas2"></th>
+                    <th scope="row"><input type="radio" name="armas"></th>
+                  </tr>
+                </tbody>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col" colspan="4"><center>HABITACIONES</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Vestibulo</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Comedor</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cocina</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Patio</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Observatorio</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Teatro</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sala</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Spa</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                  <tr>
+                    <th scope="row">Hab. de Huespedes</th>
+                    <th scope="row"><input type="checkbox" ></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES2"></th>
+                    <th scope="row"><input type="radio" name="HABITACIONES"></th>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+            </div>
+        </div>
+        <!--<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>-->
+    </body>
+    </html>
